@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <main class="main">
+        <section class="left-part">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="logo" class="logo">
+                ODIN
+            </div>
+            <p class="left-part-footer">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Unsplash</a></p>
+        </section>
+        <section class="right-part">
+            <div class="section1">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form action="">
+                <div class="section2">
+                    <p>Let's do this!</p>
+                    <div class="section2-sides-wrapper">
+                        <div class="left-side">
+                            <ul>
+                                <li>
+                                    <label for="firstName">FIRST NAME</label>
+                                    <input type="text" name="firstName" id="firstName">
+                                </li>
+                                <li>
+                                    <label for="firstName">EMAIL</label>
+                                    <input type="email" name="email" id="email">
+                                </li>
+                                <li>
+                                    <label for="firstName">PASSWORD</label>
+                                    <input type="password" name="password" id="password">
+                                </li>
+                                <li class="wrong-password-match">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-side">
+                            <ul>
+                                <li>
+                                    <label for="firstName">LAST NAME</label>
+                                    <input type="text" name="lastName" id="lastName">
+                                </li>
+                                <li>
+                                    <label for="firstName">PHONE NUMBER</label>
+                                    <input type="number" name="phoneNumber" id="phoneNumber">
+                                </li>
+                                <li>
+                                    <label for="firstName">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirmPassword" id="confirmPassword">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section3">
+                    <button type="button">Create Account</button>
+                    <p>Already have an account? <a href="#" class="login-highlight">Log in</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

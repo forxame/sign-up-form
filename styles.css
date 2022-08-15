@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #596D48;
+    --light-border: #E5E7EB;
+    --section-bg-color: #F9FAFB;
+    --right-part-section1-hg: 35%;
+    --right-part-section2-hg: 35%;
+    --right-part-section3-hg: 30%;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(./fonts/JosefinSans-Regular.ttf);
+}
+
+body {
+    height: 100vh;
+    font-family: "Josefin Sans";
+}
+
+.main {
+    display: flex;
+}
+
+.left-part {
+    background: url(./images/leaves.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: 35vw;
+    color: white;
+    position: relative;
+
+}
+
+.logo-container {
+    min-height: 9rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: "Norse Bold";
+    margin-top: 24vh;
+}
+
+.logo {
+    max-height: 7rem;
+}
+
+.left-part-footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 50%;
+    left: 30%;
+    margin-bottom: 1rem;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: rgb(157, 157, 157);
+}
+
+.right-part .section1 {
+    min-height: var(--right-part-section1-hg);
+    max-height: var(--right-part-section1-hg);
+    background: var(--section-bg-color);
+    font-size: 1.6vw;
+    font-weight: bold;
+    padding: 4rem 10rem 1rem 2.4rem;
+    line-height: 1.8rem;
+    letter-spacing: .1rem;
+}
+
+.right-part .section1 p:last-of-type {
+    padding-top: 4vh;
+}
+
+.right-part .section2 {
+    min-height: var(--right-part-section2-hg);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.right-part .section2 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2C3542;
+    padding: 1.3rem 0 1rem 2.4rem;
+}
+
+
+.right-part .section2-sides-wrapper {
+    display: flex;
+    gap: 4rem;
+    padding-left: 2.4rem;
+}
+
+.right-part .section2 ul {
+    list-style: none;
+}
+
+.right-part .section2 label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: .3rem;
+    font-weight: bold;
+    color: #2C3542;
+}
+
+.right-part .section2 input {
+    min-width: 15rem;
+    min-height: 1.7rem;
+    margin-bottom: 1rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-weight: 600;
+    border: 2px solid var(--light-border);
+    border-radius: 3px;
+}
+
+.right-part .section2 input:focus {
+    outline: none;
+    border: 1px solid rgb(61, 61, 245);
+    box-shadow: 3px 3px 4px 1px rgb(128, 128, 128, 0.3);
+}
+
+.right-part .section3 {
+    min-height: var(--right-part-section3-hg);
+    background: var(--section-bg-color);
+    box-shadow: 0 10px 10px rgb(209, 209, 209) inset;
+}
+
+.right-part .section3 button {
+    background: var(--main-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .8rem 3rem;
+    border-radius: 7px;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 1px rgb(184, 184, 184);
+}
+
+.right-part .section3 button:active {
+    background: #4d5b42;
+}
+
+.right-part .section3 p {
+    margin-top: 2rem;
+    margin-left: 2.4rem;
+}
+
+.right-part .section3 .login-highlight {
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.right-part .section3 .login-highlight:active {
+    color: #4d5b42;
+    text-decoration: underline;
+}
+
+.wrong-password-match {
+    font-size: 13px;
+    margin-top: -14px;
+    color: red;
+}
+
+.wrong-password-border {
+    border: 1px solid red !important;
+}
